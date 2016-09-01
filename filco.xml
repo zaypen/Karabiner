@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+    	<name>Filco</name>
+    	<devicevendordef>
+			<vendorname>Filco</vendorname>
+			<vendorid>0x0a5c</vendorid>
+		</devicevendordef>
+		<deviceproductdef>
+			<productname>Filco</productname>
+			<productid>0x8502</productid>
+		</deviceproductdef>
+		<item>
+			<name>Swap Command_L and Option_L</name>
+			<identifier>private.filco_minila_air_swap_command_and_option</identifier>
+			<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+			<autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+		</item>
+		<item>
+			<name>Swap Option_R to Command_R</name>
+			<identifier>private.filco_minila_air_map_right_option_to_command</identifier>
+			<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+			<autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::COMMAND_R</autogen>
+			<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::OPTION_R</autogen>
+		</item>
+		<item>
+			<name>Map Command + Esc to Command + `</name>
+			<identifier>private.filco_minila_air_map_commandesc_to_commandbackquote</identifier>
+			<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+			<autogen>
+				__KeyToKey__
+				KeyCode::ESCAPE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,    
+				KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE
+			</autogen>
+		</item>
+		<item>
+			<name>Map App to Fn</name>
+			<identifier>private.filco_minila_air_map_app_to_fn</identifier>12
+			<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+			<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::FN</autogen>
+		</item>
+		<item>
+			<name>Map App + Number to Consumer Keys</name>
+			<item>
+				<name>Map App + 1 to Brightness Down</name>
+				<identifier>private.filco_minila_air_map_app_fn1_to_brightness_down</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::FN, ConsumerKeyCode::BRIGHTNESS_DOWN</autogen>
+			</item>
+			<item>
+				<name>Map App + 2 to Brightness Up</name>
+				<identifier>private.filco_minila_air_map_app_fn2_to_brightness_up</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::FN, ConsumerKeyCode::BRIGHTNESS_UP</autogen>
+			</item>
+			<item>
+				<name>Map App + 0 to Volume Mute</name>
+				<identifier>private.filco_minila_air_map_app_fn0_to_volume_mute</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::FN, ConsumerKeyCode::VOLUME_MUTE</autogen>
+			</item>
+			<item>
+				<name>Map App + - to Volume Down</name>
+				<identifier>private.filco_minila_air_map_app_fn_and_minus_to_volume_down</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::FN, ConsumerKeyCode::VOLUME_DOWN</autogen>
+			</item>
+			<item>
+				<name>Map App + = to Volume Up</name>
+				<identifier>private.filco_minila_air_map_app_fn_and_equal_to_volume_up</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::FN, ConsumerKeyCode::VOLUME_UP</autogen>
+			</item>
+			<item>
+				<name>Map App + ` to Power</name>
+				<identifier>private.filco_minila_air_map_app_fn_and_backquote_to_power</identifier>
+				<device_only>DeviceVendor::Filco, DeviceProduct::Filco</device_only>
+				<autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::FN, ConsumerKeyCode::POWER</autogen>
+			</item>
+		</item>
+    </item>
+</root>
